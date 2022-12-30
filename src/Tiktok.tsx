@@ -29,7 +29,7 @@ export default function Tiktok() {
     },
   ])
 
-  const handleLike = (id) => {
+  const handleLike = (id: number) => {
     let array = [
       ...videosButtonStatus
     ]
@@ -39,7 +39,7 @@ export default function Tiktok() {
     setVideoButtonStatus(array)
   }
 
-  const handleComments = (id) => {
+  const handleComments = (id: number) => {
     let array = [
       ...videosButtonStatus
     ]
@@ -49,7 +49,7 @@ export default function Tiktok() {
     setVideoButtonStatus(array)
   }
 
-  const handleShares = (id) => {
+  const handleShares = (id: number) => {
     let array = [
       ...videosButtonStatus
     ]
@@ -59,7 +59,7 @@ export default function Tiktok() {
     setVideoButtonStatus(array)
   }
 
-  const handleBookmarks = (id) => {
+  const handleBookmarks = (id: number) => {
     let array = [
       ...videosButtonStatus
     ]
