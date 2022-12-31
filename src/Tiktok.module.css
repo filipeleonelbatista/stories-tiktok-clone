@@ -47,6 +47,27 @@
   gap: 2rem;
 }
 
+
+@media (max-width: 720px) {
+  .infoContainer svg{    
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .avatarContainer {
+    width: 32px;
+    height: 32px;
+  }
+
+  .infoContainer p {
+    font-size: 10pt !important;    
+  }
+
+  .data{
+    width: 80%;
+  }
+}
+
 .avatarContainer {
   width: 62px;
   height: 62px;
@@ -87,6 +108,7 @@
 }
 
 .data {
+  width: 80%;
   position: absolute;
   bottom: 4rem;
   left: 2rem;
@@ -96,7 +118,8 @@
   gap: 0.5rem;
 
 }
-.data a{
+
+.data a {
   text-decoration: none;
 }
 

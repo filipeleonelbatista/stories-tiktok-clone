@@ -5,6 +5,14 @@
 
 }
 
+@media (max-width: 720px) {
+  .container {
+    height: calc(100vh - 6rem);
+    display: grid;
+    grid-template-rows: 1fr 6rem;
+  }
+}
+
 .buttonContainer {
   width: 100%;
   height: 6rem;
