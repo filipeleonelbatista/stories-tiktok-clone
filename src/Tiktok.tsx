@@ -122,6 +122,7 @@ export default function Tiktok() {
                 <ReactPlayer
                   playing
                   loop
+                  muted
                   controls={false}
                   width="100%"
                   height="100%"
