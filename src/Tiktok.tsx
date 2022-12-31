@@ -34,7 +34,7 @@ export default function Tiktok() {
       ...videosButtonStatus
     ]
 
-    array[id].likes = true
+    array[id].likes = !array[id].likes
 
     setVideoButtonStatus(array)
   }
@@ -44,7 +44,7 @@ export default function Tiktok() {
       ...videosButtonStatus
     ]
 
-    array[id].comments = true
+    array[id].comments = !array[id].comments
 
     setVideoButtonStatus(array)
   }
@@ -54,7 +54,7 @@ export default function Tiktok() {
       ...videosButtonStatus
     ]
 
-    array[id].shares = true
+    array[id].shares = !array[id].shares
 
     setVideoButtonStatus(array)
   }
@@ -64,7 +64,7 @@ export default function Tiktok() {
       ...videosButtonStatus
     ]
 
-    array[id].bookmarks = true
+    array[id].bookmarks = !array[id].bookmarks
 
     setVideoButtonStatus(array)
   }
