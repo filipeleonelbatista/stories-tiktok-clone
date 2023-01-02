@@ -5,7 +5,7 @@ import Stories from './Stories';
 import Tiktok from './Tiktok';
 
 export default function App() {
-  const [nav, setNav] = useState('tiktok')
+  const [nav, setNav] = useState('stories')
 
   return (
     <div className={styles.container}>

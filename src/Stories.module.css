@@ -3,7 +3,189 @@
   width: 100vw;
   height: 100%;
   overflow: hidden;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.instaStoriesContainer {
+  max-width: 510px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  border: 1px solid #666;
+  border-radius: 8px;
+  background-color: #000;
+}
+
+.instaStories {
+  margin-bottom: 2rem;
+  border: none;
+  padding: 3px;
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.instaStories img {
+  border: 3px solid #333;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+}
+
+.instaStories p {
+  position: absolute;
+  z-index: 100;
+  bottom: -25px;
+  color: #FFF;
+  font-size: 10pt;
+}
+
+.whatsStoriesContainer {
+  max-width: 510px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.whatsTitleGroup {
+  padding: 1rem 0;
+  border-top: 1px solid #666;
+  margin-top: 1rem;
+}
+
+.whatsTitleGroup p {
+  color: #999;
+  font-size: 12pt;
+}
+
+.whatsStories:hover {
+  filter: brightness(1.3);
+}
+
+.whatsStories {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  transition: 0.2s;
+  cursor: pointer;
+  border: none;
+  background-color: #121212;
+  padding: 1rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.imageContainer {
+  padding: 3px;
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  background-color: #121212;
+  border: 3px solid #128C7E;
+
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.userData {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.userData h2 {
+  color: #FFF;
+  font-weight: lighter;
+}
+
+.userData p {
+  color: #999;
+  font-weight: lighter;
+}
+
+.stories {
+  max-width: 510px;
+  width: 100%;
+  height: 100%;
+  background-color: #121212;
+  position: absolute;
+  z-index: 1000;
+}
+
+.timers {
+  position: absolute;
+  z-index: 1050;
+  top: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.progress {
+  background-color: #FFFFFF99;
+  width: 100%;
+  border-radius: 4px;
+  height: 0.8rem;
+  overflow: hidden;
+}
+
+.progressConcluded {
+  background-color: #FFF;
+  width: 0%;
+  height: 100%;
+  transition: width ease-in 1s;
+}
+
+.actions {
+  position: absolute;
+  z-index: 1050;
+  top: 2.5rem;
+  right: 2rem;
+}
+
+.actions button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.reactions {
+  position: absolute;
+  z-index: 1050;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.reactions button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1010;
 }
